@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno</title>
+</head>
+<body>
+    <div id="gamemenu">
+        <form id="start_form">
+            <input placeholder="player 1 name" id="p1" type="text"/>
+            <input placeholder="player 2 name" id="p2" type="text"/>
+            <button id="playerCount_btn">Go!</button>
+        </form>
+    </div>
+    <div id="gameplay" style="display: flex; flex-direction: column; width: 100%; justify-content: center; align-items: center;">
+        <div style="margin: 1rem 0px;">
+            <input id="p1_input" placeholder="player1 card index" />
+            <button id="p1_confirm_btn">confirm</button>
+        </div>
+        <div style="margin: 1rem 0px;">
+            <input id="p2_input" placeholder="player2 card index" />
+            <button id="p2_confirm_btn">confirm</button>
+        </div>
+    </div>
+    <script type="module" src="./UnoCard.js"></script>
+    <script type="module" src="./UnoDeck.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
