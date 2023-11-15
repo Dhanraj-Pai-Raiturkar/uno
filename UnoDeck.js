@@ -12,7 +12,6 @@ class UnoDeck {
         let i=0;
         let topCard;
         while(['SKIP', 'REVERSE', 'WILD', '+2', '+4'].includes(this.cards[i].cardType)){
-            console.log("====>", this.cards[i])
             this.topCard = this.cards.splice(i, 1);
         }
     }
